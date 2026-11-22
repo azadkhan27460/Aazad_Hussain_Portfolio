@@ -62,3 +62,31 @@ h1,h2,h3,.hero-title,.section-heading h2,.project-details h3,.about-content bloc
 @media(prefers-reduced-motion:reduce){
   :where(a,button,[role="button"],.project-card,.process-item,.float-card,.brand-photo,.footer-photo,.contact-stamp,.certificate,.tool-strip b){transition:none}
 }
+
+/* Dark, dimensional controls + consistent text hover feedback */
+.button,.nav-cta,.contact-button,.menu-toggle,.project-link{
+  background:linear-gradient(145deg,#292722,#11110f)!important;
+  color:#f7f1e7!important;
+  border:1px solid #8f7955!important;
+  box-shadow:0 5px 0 #080807,0 10px 22px #17130d25,inset 0 1px 0 #ffffff22!important;
+  transition:transform .28s cubic-bezier(.2,.75,.25,1),box-shadow .28s,background .28s,color .28s!important;
+}
+.button:hover,.nav-cta:hover,.contact-button:hover,.menu-toggle:hover,.project-link:hover{
+  transform:translateY(-3px) scale(1.045)!important;
+  box-shadow:0 8px 0 #080807,0 16px 30px #17130d35,inset 0 1px 0 #ffffff2c!important;
+  background:linear-gradient(145deg,#403a30,#191815)!important;
+}
+.button span,.contact-button span,.nav-cta span{color:#d7bd8d!important}
+@media (hover:hover) and (pointer:fine){
+  body :where(h1,h2,h3,h4,p,a,button,span,strong,em,i,b,small,li,label,blockquote,.eyebrow,.kicker,.project-number,.tag-list,.photo-caption,.hero-meta,.availability,.screen-caption,.footer-bottom,.brand-copy){
+    display:inline-block;
+    transform-origin:center;
+    transition:transform .22s cubic-bezier(.2,.75,.25,1),color .22s ease,text-shadow .22s ease;
+  }
+  body :where(h1,h2,h3,h4,p,a,button,span,strong,em,i,b,small,li,label,blockquote,.eyebrow,.kicker,.project-number,.tag-list,.photo-caption,.hero-meta,.availability,.screen-caption,.footer-bottom,.brand-copy):hover{
+    transform:scale(1.055);
+    text-shadow:0 3px 14px #b89b6840;
+  }
+  .project-details h3:hover,.hero-title:hover,.section-heading h2:hover{color:#9e7b43}
+}
+@media(max-width:760px){body :where(h1,h2,h3,h4,p,a,button,span,strong,em,i,b,small,li,label,blockquote){display:initial}}
