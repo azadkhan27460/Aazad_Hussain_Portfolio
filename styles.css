@@ -90,3 +90,7 @@ h1,h2,h3,.hero-title,.section-heading h2,.project-details h3,.about-content bloc
   .project-details h3:hover,.hero-title:hover,.section-heading h2:hover{color:#9e7b43}
 }
 @media(max-width:760px){body :where(h1,h2,h3,h4,p,a,button,span,strong,em,i,b,small,li,label,blockquote){display:initial}}
+
+/* Hero now uses the full editorial canvas without the oversized portrait */
+.hero-copy{width:100%;max-width:980px}
+.hero-title{max-width:900px}
