@@ -94,3 +94,10 @@ h1,h2,h3,.hero-title,.section-heading h2,.project-details h3,.about-content bloc
 /* Hero now uses the full editorial canvas without the oversized portrait */
 .hero-copy{width:100%;max-width:980px}
 .hero-title{max-width:900px}
+
+
+/* Stronger, bolder button typography */
+.button,.nav-cta,.contact-button,.menu-toggle,.project-link{
+  font-weight:800!important;
+  letter-spacing:.035em;
+}
