@@ -101,3 +101,9 @@ h1,h2,h3,.hero-title,.section-heading h2,.project-details h3,.about-content bloc
   font-weight:800!important;
   letter-spacing:.035em;
 }
+
+
+/* Make every interactive button control visibly bold across the whole site */
+:where(button,[type="button"],[type="submit"],[type="reset"],[role="button"],.button,.btn,.nav-cta,.contact-button,.menu-toggle,.project-link,.filter-button,.tab-button){
+  font-weight:800!important;
+}
